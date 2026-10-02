@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE694951-923F-4E9A-B112-80DE4FB1DE96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpireTheRpg</RootNamespace>
+    <AssemblyName>SpireTheRpg</AssemblyName>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="BaseLib" />
+    <Reference Include="GodotSharp" />
+    <Reference Include="sts2" />
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.1\System.Threading.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="--z__ReadOnlyArray.cs" />
+    <Compile Include="--z__ReadOnlySingleElementList.cs" />
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Cards\StrikeForm.cs" />
+    <Compile Include="Combat\RpgBuildStamp.cs" />
+    <Compile Include="Combat\RpgCleanseRestSiteOption.cs" />
+    <Compile Include="Combat\RpgCombatDrop.cs" />
+    <Compile Include="Combat\RpgCombatRewards.cs" />
+    <Compile Include="Combat\RpgEquipmentReward.cs" />
+    <Compile Include="Combat\RpgEquipmentRewardSave.cs" />
+    <Compile Include="Combat\RpgFusionRestSiteOption.cs" />
+    <Compile Include="Combat\RpgIntensifyRestSiteOption.cs" />
+    <Compile Include="Combat\RpgLootTable.cs" />
+    <Compile Include="Combat\RpgPendingExtraRewardEntry.cs" />
+    <Compile Include="Combat\RpgPendingExtraRewards.cs" />
+    <Compile Include="Combat\RpgRestSiteForgeVfx.cs" />
+    <Compile Include="Combat\RpgRng.cs" />
+    <Compile Include="Combat\RpgRunLoot.cs" />
+    <Compile Include="Combat\RpgScrollReward.cs" />
+    <Compile Include="Combat\RpgTradeRestSiteOption.cs" />
+    <Compile Include="Combat\SharedJson.cs" />
+    <Compile Include="Core\RpgAbilityInfo.cs" />
+    <Compile Include="Core\RpgAccessoryCombatHooks.cs" />
+    <Compile Include="Core\RpgAccessoryGates.cs" />
+    <Compile Include="Core\RpgAccessoryRunState.cs" />
+    <Compile Include="Core\RpgActiveLoadout.cs" />
+    <Compile Include="Core\RpgAffixCatalog.cs" />
+    <Compile Include="Core\RpgAffixDef.cs" />
+    <Compile Include="Core\RpgCombatBuffApplier.cs" />
+    <Compile Include="Core\RpgCurseCombat.cs" />
+    <Compile Include="Core\RpgCurseSystem.cs" />
+    <Compile Include="Core\RpgEffectiveConfig.cs" />
+    <Compile Include="Core\RpgEquippedGearSync.cs" />
+    <Compile Include="Core\RpgEquippedLoadoutMessage.cs" />
+    <Compile Include="Core\RpgEquipSlot.cs" />
+    <Compile Include="Core\RpgFinalFormMirror.cs" />
+    <Compile Include="Core\RpgHostConfigSync.cs" />
+    <Compile Include="Core\RpgHpCost.cs" />
+    <Compile Include="Core\RpgInputBindings.cs" />
+    <Compile Include="Core\RpgItemCatalog.cs" />
+    <Compile Include="Core\RpgItemData.cs" />
+    <Compile Include="Core\RpgItemFusion.cs" />
+    <Compile Include="Core\RpgItemIntensify.cs" />
+    <Compile Include="Core\RpgItemRarity.cs" />
+    <Compile Include="Core\RpgItemRoller.cs" />
+    <Compile Include="Core\RpgItemTemplate.cs" />
+    <Compile Include="Core\RpgLoadout.cs" />
+    <Compile Include="Core\RpgLoadoutNetSync.cs" />
+    <Compile Include="Core\RpgMagicScrollPending.cs" />
+    <Compile Include="Core\RpgNet.cs" />
+    <Compile Include="Core\RpgPaths.cs" />
+    <Compile Include="Core\RpgPlayerProfile.cs" />
+    <Compile Include="Core\RpgPowerLookup.cs" />
+    <Compile Include="Core\RpgProgress.cs" />
+    <Compile Include="Core\RpgRerollDie.cs" />
+    <Compile Include="Core\RpgRestSiteSync.cs" />
+    <Compile Include="Core\RpgRewardItemPersistence.cs" />
+    <Compile Include="Core\RpgRunConfigSnapshot.cs" />
+    <Compile Include="Core\RpgRunEquipmentAllDto.cs" />
+    <Compile Include="Core\RpgRunEquipmentDto.cs" />
+    <Compile Include="Core\RpgRunEquipmentPersistence.cs" />
+    <Compile Include="Core\RpgRunLoadout.cs" />
+    <Compile Include="Core\RpgSaveDto.cs" />
+    <Compile Include="Core\RpgSaveStore.cs" />
+    <Compile Include="Core\RpgScrollBag.cs" />
+    <Compile Include="Core\RpgScrollKind.cs" />
+    <Compile Include="Core\RpgScrollNet.cs" />
+    <Compile Include="Core\RpgScrolls.cs" />
+    <Compile Include="Core\RpgScrollUseMessage.cs" />
+    <Compile Include="Core\RpgStatMod.cs" />
+    <Compile Include="Core\RpgTextObfuscate.cs" />
+    <Compile Include="Core\RpgTradeSync.cs" />
+    <Compile Include="Core\RpgTwinExistence.cs" />
+    <Compile Include="Core\SpireTheRpgConfig.cs" />
+    <Compile Include="Patches\MainMenuPatches.cs" />
+    <Compile Include="Patches\ModConfigLocPatches.cs" />
+    <Compile Include="Patches\RpgCombatVictoryPatches.cs" />
+    <Compile Include="Patches\RpgDiscoveryPatches.cs" />
+    <Compile Include="Patches\RpgEquippedGearRelicUiPatches.cs" />
+    <Compile Include="Patches\RpgExtraRewardSavePatches.cs" />
+    <Compile Include="Patches\RpgInputBindingPatches.cs" />
+    <Compile Include="Patches\RpgInventoryHotkeyPatches.cs" />
+    <Compile Include="Patches\RpgItemRelicClickWiring.cs" />
+    <Compile Include="Patches\RpgModifyDamageMultCompatPatch.cs" />
+    <Compile Include="Patches\RpgMoveHideInventoryPatch.cs" />
+    <Compile Include="Patches\RpgRelicBigIconPatch.cs" />
+    <Compile Include="Patches\RpgRelicGrantPatches.cs" />
+    <Compile Include="Patches\RpgRelicIconOutlinePatch.cs" />
+    <Compile Include="Patches\RpgRelicIconPatch.cs" />
+    <Compile Include="Patches\RpgRelicIconShared.cs" />
+    <Compile Include="Patches\RpgRelicModelSetPatch.cs" />
+    <Compile Include="Patches\RpgRelicNodeReloadPatch.cs" />
+    <Compile Include="Patches\RpgRestSiteOptionsLayoutPatch.cs" />
+    <Compile Include="Patches\RpgRunLootCommitPatches.cs" />
+    <Compile Include="Patches\RpgShopRandomItemPatches.cs" />
+    <Compile Include="Patches\RpgStrikeFormDamageCompatPatch.cs" />
+    <Compile Include="Patches\RpgTwinExistencePatches.cs" />
+    <Compile Include="Powers\StrikeFormPower.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relics\RpgDataRelic.cs" />
+    <Compile Include="Relics\RpgEquippedGearRelic.cs" />
+    <Compile Include="Relics\RpgExpRelic.cs" />
+    <Compile Include="Relics\RpgItemRelic.cs" />
+    <Compile Include="Relics\RpgRandomItemShopRelic.cs" />
+    <Compile Include="SpireAssets.cs" />
+    <Compile Include="SpireLoc.cs" />
+    <Compile Include="SpireTheRpgMainFile.cs" />
+    <Compile Include="Ui\RpgAbilityScreen.cs" />
+    <Compile Include="Ui\RpgCodexScreen.cs" />
+    <Compile Include="Ui\RpgFusionScreen.cs" />
+    <Compile Include="Ui\RpgInRunInventory.cs" />
+    <Compile Include="Ui\RpgIntensifyScreen.cs" />
+    <Compile Include="Ui\RpgInventoryScreen.cs" />
+    <Compile Include="Ui\RpgItemBrowseBar.cs" />
+    <Compile Include="Ui\RpgItemBrowseState.cs" />
+    <Compile Include="Ui\RpgItemSortMode.cs" />
+    <Compile Include="Ui\RpgItemTooltip.cs" />
+    <Compile Include="Ui\RpgLootScreen.cs" />
+    <Compile Include="Ui\RpgPlaceholderScreen.cs" />
+    <Compile Include="Ui\RpgPlayerScreen.cs" />
+    <Compile Include="Ui\RpgPowerTip.cs" />
+    <Compile Include="Ui\RpgSubmenu.cs" />
+    <Compile Include="Ui\RpgTradeScreen.cs" />
+    <Compile Include="Ui\RpgUpdateNotice.cs" />
+    <Compile Include="Ui\RpgWipScreen.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
